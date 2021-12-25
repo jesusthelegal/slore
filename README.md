@@ -1,0 +1,2 @@
+# slore
+discord.gg/seks
