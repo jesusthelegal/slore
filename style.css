@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.card {
+  width: 360px;
+  height: 262px;
+  background-color: rgba(255, 255, 255, 0.363);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-top: 25px;
+  cursor: pointer;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.user-online-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #53f45a;
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-name h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.profile-role {
+  color: #161515;
+}
+
+.card-footer {
+  width: 85%;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.social-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-buttons button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  font-size: 23px;
+  margin: 0 20px;
+  text-decoration: wavy;
+}
+
+
+/***/
+
+a {
+  color:rgb(61, 59, 59);
+  background: #f8f5f6;
+  border-radius:100px;
+  text-align:center;
+  text-decoration:none;
+  font-family:fontawesome;
+  position: relative;
+  display: inline-block;
+  width:40px;
+  height:40px;
+  padding-top:12px;
+  margin:0 2px;
+  -o-transition:all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+   -webkit-font-smoothing: antialiased;
+}
+
+a:hover {
+  background: #bdbaba;
+}
+
+/* font awesome icons */
+
+a:nth-of-type(1):before {
+content:'\f09b';
+}
+a:nth-of-type(2):before {
+content:'\f1bc';
+}
+a:nth-of-type(3):before {
+content:'\f16d';
+}
+a:nth-of-type(4):before {
+content:'\f113';
+}
+a:nth-of-type(5):before {
+content:'\f17d';
+}
+a:nth-of-type(6):before {
+content:'\f1cb';
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
